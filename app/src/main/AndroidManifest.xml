@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.esameits2019">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Mod01"/>
+        <activity android:name=".Mod02"/>
+        <activity android:name=".New01" />
+        <activity android:name=".New02" />
+
+        <provider
+            android:name=".data.DBProvider"
+            android:authorities="com.example.esameits2019.data.ContentProvider" />
+
+        <activity android:name=".List01" />
+        <activity android:name=".List02" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
